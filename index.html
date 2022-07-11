@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio - Site</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <nav class="menu__nav container">
+      <a class="menu__logo">Portfolio</a>
+      <ul class="menu__content">
+        <li class="menu__link"><a class="link--orange" href="">Home</a></li>
+        <li class="menu__link"><a class="link" href="">Projects</a></li>
+        <li class="menu__link"><a class="link" href="">Resume</a></li>
+        <li class="menu__link"><a class="link--bottom" href="">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="section__aboult" id="sobre">
+    <div class="container container__aboult">
+      <div class="content__text">
+        <h1 class="title">Oi! Eu sou <span class="text__span-orange">Carlos Alessandro</span></h1>
+        <p class="text__paragraph">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+          print, graphic or web designs</p>
+        <a class="link--bottom">Hire me</a>
+      </div>
+      <div class="aboult__img">
+        <div class="content__img">
+          <img src="pessoa.png" alt="">
+          <div class="div__border">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section__service" id="service">
+    <div class="container">
+      <div class="container__text">
+        <h2 class="title">MY <span class="text__span-orange">services</span></h2>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in layingLorem ipsum, or lipsum as it is
+          sometimes known,
+          is dummy text used in layingLore</p>
+        <a class="link--bottom">Download Resume</a>
+      </div>
+      <div class="card__slide">
+        <div class="card__service">
+          <img src="assets/img/ux.png" alt="" class="card__img">
+          <h3 class="card__title">UI/UX</h3>
+          <p class="card__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying</p>
+        </div>
+        <div class="card__service">
+          <img src="assets/img/design-grafico.png" alt="" class="card__img">
+          <h3 class="card__title">Desgin</h3>
+          <p class="card__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying</p>
+        </div>
+        <div class="card__service">
+          <img src="assets/img/coding.png" alt="" class="card__img">
+          <h3 class="card__title">Developer</h3>
+          <p class="card__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__work" id="work">
+    <div class="container">
+      <h2>My <span class="text__span-orange">Exceptional</span> Works</h2>
+      <div id="carousel">
+        <div class="hideLeft">
+          <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+        </div>
+
+        <div class="prevLeftSecond">
+          <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+        </div>
+
+        <div class="prev">
+          <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+        </div>
+
+        <div class="selected">
+          <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+        </div>
+
+        <div class="next">
+          <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+        </div>
+
+        <div class="nextRightSecond">
+          <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+        </div>
+
+        <div class="hideRight">
+          <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+        </div>
+        <div class="container__button">
+          <button id="prev" onclick="moveToSelected('prev')">Prev</button>
+          <button id="next" onclick="moveToSelected('next')">Next</button>
+        </div>
+      </div>
+      <article class="container__text">
+        <h3>Recent Projects</h3>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in layingLorem ipsum, or lipsum as it is
+          sometimes known, is dummy text used in laying</p>
+      </article>
+      <div class="card__slide">
+        <div class="card__service">
+          <img src="assets/img/ux.png" alt="" >
+        </div>
+        <div class="card__service">
+          <img src="assets/img/design-grafico.png" alt="">
+        </div>
+        <div class="card__service">
+          <img src="assets/img/coding.png" alt="" >
+        </div>
+      </div>
+  </section>
+  <footer id="footer" class="container">
+    <ul class="footer">
+      <li class="footer__logo"><a class="footer__link">Personal</a></li>
+      <li class="footer__andress">
+        <p class="andress">123 Market St. #22B Charlottesville,
+           California 44635</p>
+      </li>
+      <li class="footer__menu">
+        <a href="" class="menu__link">About</a>
+        <a href="" class="menu__link">Growers</a>
+        <a href="" class="menu__link">Merchants</a>
+        <a href="" class="menu__link">Partners</a>
+        <a href="" class="menu__link">Contact</a>
+      </li>
+      <li class="footer__social">
+        <a class="Facebook">Facebook</a>
+        <a class="Facebook">Twitter</a>
+        <a class="Facebook">Linkedin</a>
+        <a class="Facebook">Instagram</a>
+      </li>
+    </ul>
+    <div class="footer__contact">
+      <p class="fone">(99)99999999</p>
+      <p class="email">teste@teste.com</p>
+    </div>
+  </footer>
+  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
